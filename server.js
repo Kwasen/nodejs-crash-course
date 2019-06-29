@@ -2,9 +2,7 @@ const http = require('http');
 const path = require('path');
 const fs = require('fs');
 
-import {
-    RouteResolver
-} from './route';
+const RouteResolver = require('./route');
 
 const server = http.createServer((req, res) => {
     const routeResolver = new RouteResolver();

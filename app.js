@@ -129,8 +129,8 @@
 const http = require('http');
 
 // create serve
-http.createServer((req, res) => {
-    // write response
-    res.write('Hello There');
-    res.end();
-}).listen(5000, () => console.log('Server running..'));
+// http.createServer((req, res) => {
+//     // write response
+//     res.write('Hello There');
+//     res.end();
+// }).listen(5000, () => console.log('Server running..'));

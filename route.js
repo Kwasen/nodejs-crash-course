@@ -2,9 +2,9 @@ const EventEmitter = require('events');
 const path = require('path');
 const fs = require('fs');
 
-export const routes = ['/', 'home', 'about'];
+const routes = ['/', 'home', 'about'];
 
-export class RouteResolver extends EventEmitter {
+class RouteResolver extends EventEmitter {
     // ONLY WORKS WITH PATH WITH ONE SLASH (/)
     // Checks if path name is part of the registereed route, emits the appropriate page
     getPage(pathName) {
@@ -40,3 +40,5 @@ export class RouteResolver extends EventEmitter {
         }
     }
 }
+
+module.exports = RouteResolver;
